@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Najeeb Ullah — Enterprise IT Support Professional</title>
+  <title>Certifications — Najeeb Ullah</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -18,8 +18,6 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -28,61 +26,92 @@
       line-height: 1.75;
     }
 
-    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.9s ease; }
-    .reveal.active { opacity: 1; transform: translateY(0); }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 6rem 2rem;
+    }
 
-    .container { max-width: 1240px; margin: auto; padding: 6rem 2rem; }
-    section { margin-bottom: 7rem; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-    h2 { font-family: 'Playfair Display', serif; font-size: 2.6rem; margin-bottom: 3rem; }
+    p.subtitle {
+      color: var(--text-muted);
+      margin-bottom: 4rem;
+    }
 
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; }
-    .skill { background: var(--bg-soft); padding: 1.2rem 1.6rem; border-radius: 16px; border: 1px solid var(--border); font-size: 0.95rem; }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
     .cert-card {
       background: var(--bg-soft);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 2rem;
+      border-radius: 22px;
+      padding: 2.5rem;
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
-    .cert-card img { height: 40px; width: auto; }
+
+    .cert-card img {
+      height: 44px;
+      width: auto;
+    }
+
+    .cert-card strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
   </style>
 </head>
 
 <body>
 
 <div class="container">
+  <h1>Certifications</h1>
+  <p class="subtitle">Professional certifications and technical coursework</p>
 
-  <section class="reveal active">
-    <h2>Certifications</h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <img src="aws-logo.png" alt="AWS">
-        <div>
-          <strong>End User Computing on AWS</strong><br>
-          Introductory
-        </div>
-      </div>
-      <div class="cert-card">
-        <img src="aws-logo.png" alt="AWS">
-        <div>
-          <strong>End User Computing on AWS</strong><br>
-          Advanced
-        </div>
-      </div>
-      <div class="cert-card">
-        <div>
-          <strong>CS401: Operating Systems</strong><br>
-          Saylor Academy
-        </div>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="aws-logo.png" alt="AWS Logo">
+      <div>
+        <strong>End User Computing on AWS</strong>
+        Introductory
       </div>
     </div>
-  </section>
 
+    <div class="cert-card">
+      <img src="aws-logo.png" alt="AWS Logo">
+      <div>
+        <strong>End User Computing on AWS</strong>
+        Advanced
+      </div>
+    </div>
+
+    <div class="cert-card">
+      <div>
+        <strong>CS401: Operating Systems</strong>
+        Saylor Academy
+      </div>
+    </div>
+  </div>
+
+  <a class="back" href="index.html">← Back to Portfolio</a>
 </div>
 
 </body>
